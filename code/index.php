@@ -30,4 +30,28 @@ $answer *= 2;
 $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
-echo $answer;
+echo $answer . "</br>";
+
+echo "</br>" . "5 task". "</br>";
+$a = 10;
+$b = 3;
+echo $a%$b . "</br>";
+
+if($a/$b == 0){
+    echo "Делится " . $a/$b;
+}
+else{
+    echo "Делится c остатком " . $a%$b;
+}
+echo "</br>";
+$st = pow(2,10);
+$sq = sqrt(245);
+$array = array(4, 2,5 ,19 ,13 ,0, 10);
+$answer = 0;
+foreach ($array as $item){
+    $answer += pow($item,2);
+}
+echo sqrt($answer). "</br>";
+$sq = sqrt(587);
+$as_array = array('round'=>round($sq) , 'ceil'=> ceil($sq) , 'floor'=>floor($sq));
+echo "round:".round($sq) ." ceil:". ceil($sq) ." floor:". floor($sq) . "</br>";
