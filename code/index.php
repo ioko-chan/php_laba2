@@ -15,4 +15,10 @@ $this_month = 1089.98;
 echo $last_month - $this_month . "</br>";
 
 echo "3 task". "</br>";
+$num_languages = 4;
+$mounths = 11;
+$days = $mounths * 16;
+$days_per_language = $days / $num_languages;
+echo "Мэг изучала каждый язык за " . $days_per_language ." дня ". "</br>";
+echo 8**2 . "</br>";
 
