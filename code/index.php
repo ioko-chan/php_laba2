@@ -57,3 +57,36 @@ $as_array = array('round'=>round($sq) , 'ceil'=> ceil($sq) , 'floor'=>floor($sq)
 echo "round:".round($sq) ." ceil:". ceil($sq) ." floor:". floor($sq) . "\n";
 
 echo "\n" . "6 task". "\n";
+function printStringReturnNumber(){
+    echo "строка";
+    return 42;
+}
+$my_num = printStringReturnNumber();
+echo $my_num . "\n";
+
+echo "\n" . "7 task". "\n";
+function increaseEnthusiasm(string $str){
+    return $str . "!";
+}
+echo  increaseEnthusiasm("Мир");
+function repeatThreeTimes(string $str){
+    return $str.$str.$str;
+}
+echo  repeatThreeTimes("Мур");
+echo "\n";
+echo   increaseEnthusiasm(repeatThreeTimes(increaseEnthusiasm("Май")));
+echo "\n";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
