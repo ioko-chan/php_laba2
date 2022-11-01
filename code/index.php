@@ -77,16 +77,26 @@ echo "\n";
 echo   increaseEnthusiasm(repeatThreeTimes(increaseEnthusiasm("Май")));
 echo "\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo "\n" . "8 task". "\n";
+function arrayFill(string $str,int $size):array{
+    $array = array( $str);
+    for ($i = 0;$i<$size-1; $i++){
+        array_unshift($array, $str);
+    }
+    return $array;
+}
+var_dump( arrayFill("чпоньк",5));
+echo "\n";
+$array_2step = array(array(1,2,3),array(4,5),array(6));
+$sum = 0;
+foreach ($array_2step as $item){
+    $sum += array_sum($item);
+}
+echo $sum . "\n";
+$user = array("name"=>"Ekaterina" , "surname"=>"Solomennikova", "patronymic"=>"-");
+echo $user["name"]. " ".   $user["surname"]. " " .$user["patronymic"] . "\n";
+$date = array("day"=>30 , "mounth"=>10 , "year"=>2022);
+echo $date["year"]."-".$date["mounth"]."-".$date["day"]."\n";
+$array = array("a", "b","c","d");
+echo count($array)."\n";
+echo  $array[count($array)-2];
