@@ -99,4 +99,37 @@ $date = array("day"=>30 , "mounth"=>10 , "year"=>2022);
 echo $date["year"]."-".$date["mounth"]."-".$date["day"]."\n";
 $array = array("a", "b","c","d");
 echo count($array)."\n";
-echo  $array[count($array)-2];
+echo  $array[count($array)-2]. "\n";
+
+echo "\n" . "9 task". "\n";
+function fun1($var1, $var2):bool{
+    if($var1+$var2>10){
+        return true;
+    }
+    return false;
+}
+function fun2($var1, $var2):bool{
+    if($var1==$var2){
+        return true;
+    }
+    return false;
+}
+$test = 0;
+if(!$test) echo "верно". "\n";
+$age =99;
+if($age<10 || $age>99){
+    echo "age <10 or age>99" ."\n";
+}
+else{
+    $sum = array_sum(str_split(abs($age), 1));
+     if($sum<=9){
+         echo "сумма цифр однозначна" . "\n";
+     }
+     else{
+         echo "сумма цифр двузначна" . "\n";
+     }
+}
+$arr = array(1,3,4,5,56);
+if(count($arr)==3){
+    echo array_sum($array);
+}
